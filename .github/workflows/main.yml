@@ -21,4 +21,5 @@ jobs:
           key: cache-fdcf3d5
 
       - name: Show cache result
-        run: echo "Cache hit: ${{ steps.cache-step.outputs.cache-hit }}"
+        run: |
+          echo "Cache hit: ${{ steps.cache-step.outputs.cache-hit }}"
